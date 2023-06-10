@@ -20,5 +20,8 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.words = require("./words.model.js")(sequelize, Sequelize);
+db.categories = require("./categories.model.js")(sequelize, Sequelize);
+db.sets = require("./sets.model.js")(sequelize, Sequelize);
+db.langauges = require("./languages.model.js")(sequelize, Sequelize);
 
 module.exports = db;

@@ -19,6 +19,9 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/words.routes.js")(app);
+require("./app/routes/categories.routes.js")(app);
+require("./app/routes/sets.routes.js")(app);
+require("./app/routes/languages.routes.js")(app);
 
 const PORT = process.env.PORT || 8080;
 

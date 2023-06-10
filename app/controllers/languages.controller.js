@@ -1,5 +1,5 @@
 const db = require("../models");
-const Word = db.languages;
+const Language = db.languages;
 const Op = db.Sequelize.Op;
 
 exports.create = (req, res) => {
@@ -21,7 +21,7 @@ exports.create = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while creating the new langauge."
+                    err.message || "Some error occurred while creating the new language."
             });
         });
 };
@@ -37,7 +37,7 @@ exports.findAll = (req, res) => {
         .catch(err => {
             res.status(500).send({
                 message:
-                    err.message || "Some error occurred while retrieving the languages."
+                    err.message || "Some error occurred while retrieving languages."
             });
         });
 };
